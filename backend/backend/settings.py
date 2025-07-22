@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt.token_blacklist',
     'corsheaders',
     'anymail',
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [
@@ -149,11 +150,11 @@ AUTH_USER_MODEL = 'userauths.User'
 
 MAILGUN_API_KEY = env("MAILGUN_API_KEY")
 MAILER_SEND_API_TOKEN = env("MAILER_SEND_API_TOKEN")
-MAILGUN_SENDER_DOMAIN = env("MAILGUN_SENDER_TOKEN")
+MAILGUN_SENDER_DOMAIN = env("MAILGUN_SENDER_DOMAIN")
 
 ANY_MAIL = {
     "MAILGUN_API_KEY" : env("MAILGUN_API_KEY"),
-    "MAILGUN_SENDER_DOMAIN" : env("MAILGUN_SENDER_TOKEN"),
+    "MAILGUN_SENDER_DOMAIN" : env("MAILGUN_SENDER_DOMAIN"),
     
 }
 

@@ -3,7 +3,7 @@ import { mountStoreDevtool } from 'simple-zustand-devtools'
 
 const useAuthStore = create((set, get) => ({
     allUserData: null,
-    loading: flase,
+    loading: false,
 
     user: () => ({
         user_id: get().allUserData?.user_id || null,
